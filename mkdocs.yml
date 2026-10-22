@@ -3,6 +3,7 @@ site_url: https://x665adex563.github.io/shared-notes/
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh-TW
   features:
     - navigation.sections
