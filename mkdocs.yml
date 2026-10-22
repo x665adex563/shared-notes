@@ -1,5 +1,5 @@
 site_name: My Notes
-site_url: https://x665adex563.github.io/test/
+site_url: https://x665adex563.github.io/shared-notes/
 
 theme:
   name: material
@@ -19,3 +19,9 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+
+extra_css:
+  - assets/css/main.css
+
+extra_javascript:
+  - assets/js/main.js
