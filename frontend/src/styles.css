@@ -1,3 +1,6 @@
 @import "tailwindcss";
 
 @source "../../overrides";
+
+@import "./styles/theme.css";
+@import "./styles/layout.css";

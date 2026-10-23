@@ -7,6 +7,15 @@ theme:
   language: zh-TW
   features:
     - search.suggest
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: 切換至深色模式
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: 切換至淺色模式
 
 docs_dir: public
 
