@@ -6,8 +6,6 @@ theme:
   custom_dir: overrides
   language: zh-TW
   features:
-    - navigation.sections
-    - navigation.expand
     - search.suggest
 
 docs_dir: public
@@ -23,6 +21,3 @@ markdown_extensions:
 
 extra_css:
   - assets/css/main.css
-
-extra_javascript:
-  - assets/js/main.js
