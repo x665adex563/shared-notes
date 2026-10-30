@@ -6042,36 +6042,36 @@
 
 
 <hr />
-<p>2025 12 21 created in OneNote
-2026 10 13 moved from OneNote
+<p>2025 12 21 created in OneNote<br />
+2026 10 13 moved from OneNote<br />
 2026 10 13 補充完整版Github連結</p>
 <hr />
-<p>完整版
+<p>完整版<br />
 https://github.com/x665adex563/comic_library_viewer</p>
 <h1 id="python">python #網頁開啟圖片 #一頁式瀏覽<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
-<p>1.官網下載 Windows Installer (64-bit)。
-https://www.python.org/downloads/windows/
-2.安裝前記得勾選 Add Python 3.x to PATH，才能在小黑窗執行 python
+<p>1.官網下載 Windows Installer (64-bit)。<br />
+https://www.python.org/downloads/windows/<br />
+2.安裝前記得勾選 Add Python 3.x to PATH，才能在小黑窗執行 python<br />
 3.安裝完成後，開啟 "cmd" 輸入 python --version，會跳出版本 就是成功安裝</p>
-<p>4.到自己要瀏覽圖片的資料夾建立一個 文件夾，檔名改成 .py。
+<p>4.到自己要瀏覽圖片的資料夾建立一個 文件夾，檔名改成 .py。<br />
 資料夾不要放在會被保護的地方，反正執行python有跳出防毒就去解鎖，解鎖沒用的話，先把資料夾丟桌面</p>
-<p>5.對這個檔案右鍵 &gt; 內容 &gt; 改開啟方式 &gt; 找路徑 &gt;
+<p>5.對這個檔案右鍵 &gt; 內容 &gt; 改開啟方式 &gt; 找路徑 &gt;<br />
 C:\Users\你的使用者\AppData\Local\Programs\Python\Python3x\pythonw.exe</p>
 <p>6.右鍵 &gt; 開啟檔案 &gt; 用筆記本 或 python 開啟編輯，把下面的內容貼進去後，點兩下就會自動開啟網頁瀏覽圖片了</p>
-<p>7.如果想打包成 .exe 檔的話，打開 cmd，輸入 cd 你的檔案位置
-輸入 pyinstaller --onefile --noconsole 檔案名稱.py  (檔名不可以有空白鍵)
-他就會自動輸出到 dist資料夾裡，就有 .exe 檔了
---onefile → 生成單一 exe 檔
+<p>7.如果想打包成 .exe 檔的話，打開 cmd，輸入 cd 你的檔案位置<br />
+輸入 pyinstaller --onefile --noconsole 檔案名稱.py  (檔名不可以有空白鍵)<br />
+他就會自動輸出到 dist資料夾裡，就有 .exe 檔了<br />
+--onefile → 生成單一 exe 檔<br />
 --noconsole → 執行時不顯示小黑窗</p>
 <p>import os</p>
 <h1 id="_1">設定漫畫資料夾<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>folder = os.getcwd()  # 當前資料夾</p>
 <h1 id="_2">確保資料夾存在<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
-<p>if not os.path.exists(folder):
+<p>if not os.path.exists(folder):<br />
     os.makedirs(folder)</p>
 <p>html_file = os.path.join(folder, "index.html")</p>
 <p>files = sorted(os.listdir(folder))</p>
-<p>with open(html_file, "w", encoding="utf-8") as f:
+<p>with open(html_file, "w", encoding="utf-8") as f:<br />
     f.write("""&lt;!DOCTYPE html&gt;</p>
 <html>
 <head>
@@ -6109,7 +6109,7 @@ lazyImages.forEach(img => observer.observe(img));
 <p>""")</p>
 <p>print("生成完成！打開 index.html 就可以滾動瀏覽漫畫了。")</p>
 <h1 id="_3">自動打開瀏覽器<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
-<p>import webbrowser
+<p>import webbrowser<br />
 webbrowser.open(os.path.join(folder, "index.html"))</p>
 
 

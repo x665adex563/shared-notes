@@ -6245,13 +6245,13 @@
 <p>3.發布網站大小上限為 1 GB，每月軟性流量限制(訪客總下載資料量)為 100 GB</p>
 <h2 id="_2">前置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>0.專案可以叫做 shared-notes，自己新增一個 shared-notes 的資料夾即可</p>
-<p>1.確認 python, pip 版本
-開啟終端機，輸入
-python --version
+<p>1.確認 python, pip 版本<br />
+開啟終端機，輸入<br />
+python --version<br />
 py -m pip --version</p>
-<p>2.安裝 MkDocs Material
-py -m pip install mkdocs-material
-確認版本
+<p>2.安裝 MkDocs Material<br />
+py -m pip install mkdocs-material<br />
+確認版本<br />
 py -m mkdocs --version</p>
 <p>3.在 分享資料夾 的 根目錄 裡新創一個 public 資料夾 (要公開的資料丟裡面)</p>
 <p>4.在 public 資料夾裡，新建一個 index.md 檔案，內容是 (沒有index頁面的話，進來會404)</p>
@@ -6259,7 +6259,7 @@ py -m mkdocs --version</p>
 
 歡迎來到我的筆記網站！
 </code></pre>
-<p>5.手動建立檔案 mkdocs.yml 放在根目錄，內容寫(設定主題、中文介面、側邊導覽、搜尋功能)
+<p>5.手動建立檔案 mkdocs.yml 放在根目錄，內容寫(設定主題、中文介面、側邊導覽、搜尋功能)<br />
 注意：site_url: https://帳號名稱.github.io/專案名稱/ 要手動填寫正確名稱 !!!</p>
 <pre><code class="language-yml">site_name: My Notes
 site_url: https://帳號名稱.github.io/專案名稱/
@@ -6284,43 +6284,43 @@ markdown_extensions:
       permalink: true
 </code></pre>
 <h2 id="_3">設定本地網站測試<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>1.進入檔案資料夾
+<p>1.進入檔案資料夾<br />
 cd C:\Users\knight\Desktop\專案名稱</p>
-<p>2.啟動本地網站 看結果 (Ctrl+C可以停止執行)
+<p>2.啟動本地網站 看結果 (Ctrl+C可以停止執行)<br />
 py -m mkdocs serve</p>
 <h2 id="github">設定Github倉庫<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
-<p>1.終端機輸入
-git init
-git add .
+<p>1.終端機輸入<br />
+git init<br />
+git add .<br />
 git commit -m "chore(init): initialize 專案名稱 project"</p>
-<p>2.在 Github 上手動建立倉庫後
-綁定倉庫
-git remote add origin https://github.com/帳號名稱/專案名稱.git
-確認成功
-git remote -v
-確認分支為main
-git branch -M main
-推上去
-git push -u origin main
-確認成功推上去，狀態乾淨
+<p>2.在 Github 上手動建立倉庫後<br />
+綁定倉庫<br />
+git remote add origin https://github.com/帳號名稱/專案名稱.git<br />
+確認成功<br />
+git remote -v<br />
+確認分支為main<br />
+git branch -M main<br />
+推上去<br />
+git push -u origin main<br />
+確認成功推上去，狀態乾淨<br />
 git status</p>
 <h2 id="github-pagesgithub">啟用Github Pages(用Github開啟網站)<a class="headerlink" href="#github-pagesgithub" title="Permanent link">&para;</a></h2>
-<p>1.在終端機輸入，建立專用分支&amp;網站內容
-py -m mkdocs gh-deploy
-2.開啟 GitHub 上的 專案名稱 倉庫。
-3.點選 Settings。
-4.左側選單找到 Pages。
-5.在 Build and deployment 的 Source 選擇 Deploy from a branch。
-6.Branch 選擇 gh-pages，資料夾選擇 /(root)。
+<p>1.在終端機輸入，建立專用分支&amp;網站內容<br />
+py -m mkdocs gh-deploy<br />
+2.開啟 GitHub 上的 專案名稱 倉庫。<br />
+3.點選 Settings。<br />
+4.左側選單找到 Pages。<br />
+5.在 Build and deployment 的 Source 選擇 Deploy from a branch。<br />
+6.Branch 選擇 gh-pages，資料夾選擇 /(root)。<br />
 7.按下 Save。</p>
-<p>開啟網頁輸入，就能開啟網站了
+<p>開啟網頁輸入，就能開啟網站了<br />
 https://帳號名稱.github.io/專案名稱/</p>
 <h2 id="_4">更改公開的資料 &amp; 上傳<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>手動把自己要公開的資料丟到 專案名稱\public 後</p>
-<p>開啟終端機
-進入自己的檔案
-cd 自己的檔案路徑
-更新資料
+<p>開啟終端機<br />
+進入自己的檔案<br />
+cd 自己的檔案路徑<br />
+更新資料<br />
 py -m mkdocs gh-deploy</p>
 
 
