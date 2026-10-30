@@ -20,8 +20,6 @@ function updateSidebarTitle() {
     item = item.parentElement?.closest('.md-nav__item')
   }
 
-  path.pop()
-
   if (path.length) {
     title.textContent = path.join(' / ')
   }
