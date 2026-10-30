@@ -67,3 +67,8 @@ body,
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item:first-child {
   display: none;
 }
+
+/* 擴大網站整體內容寬度 */
+.md-grid {
+  max-width: 75rem;
+}
