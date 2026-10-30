@@ -53,3 +53,8 @@ body,
 .md-typeset {
   line-height: 1.4;
 }
+
+/* 隱藏左側目錄的首頁連結 */
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item:first-child {
+  display: none;
+}
