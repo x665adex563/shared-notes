@@ -34,3 +34,6 @@ extra_css:
 
 extra_javascript:
   - assets/js/main.js
+
+hooks:
+  - hooks/preserve_blank_lines.py
