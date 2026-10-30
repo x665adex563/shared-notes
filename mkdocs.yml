@@ -31,3 +31,6 @@ markdown_extensions:
 
 extra_css:
   - assets/css/main.css
+
+extra_javascript:
+  - assets/js/main.js
