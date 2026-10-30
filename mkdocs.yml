@@ -21,6 +21,7 @@ docs_dir: public
 
 plugins:
   - search
+  - awesome-nav
 
 markdown_extensions:
   - admonition
