@@ -6,18 +6,27 @@ theme:
   custom_dir: overrides
   language: zh-TW
   features:
-    - navigation.sections
-    - navigation.expand
     - search.suggest
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: 切換至深色模式
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: 切換至淺色模式
 
 docs_dir: public
 
 plugins:
   - search
+  - awesome-nav
 
 markdown_extensions:
   - admonition
   - tables
+  - nl2br
   - toc:
       permalink: true
 
@@ -26,3 +35,6 @@ extra_css:
 
 extra_javascript:
   - assets/js/main.js
+
+hooks:
+  - hooks/preserve_blank_lines.py

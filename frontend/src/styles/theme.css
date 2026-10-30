@@ -1,0 +1,46 @@
+/* 淺色模式 */
+[data-md-color-scheme="default"] {
+  color-scheme: light;
+
+  --page-bg: #d8cbbb;
+  --text-color: #393129;
+  --header-bg: #665344;
+  --search-bg: #493b30;
+  --footer-bg: #352c25;
+  --sidebar-title-color: #f5f0e6;
+  --sidebar-link-color: #76563c;
+
+  --md-primary-fg-color: var(--header-bg);
+  --md-primary-fg-color--light: #806c5a;
+  --md-primary-fg-color--dark: #493b30;
+  --md-default-bg-color: var(--page-bg);
+  --md-default-fg-color: var(--text-color);
+  --md-typeset-a-color: var(--sidebar-link-color);
+  --md-footer-bg-color: var(--footer-bg);
+  --md-footer-fg-color: #f5f0e6;
+}
+
+/* 深色模式 - VSCode */
+[data-md-color-scheme="slate"] {
+  color-scheme: dark;
+
+  --header-bg: #1b1e25;
+  --page-bg: #252932;
+  --text-color: #d4d4d4;
+  --search-bg: #20242c;
+  --footer-bg: #20242c;
+  --sidebar-title-color: #d4d4d4;
+  --sidebar-link-color: #9cdcfe;
+
+  --md-primary-fg-color: var(--header-bg);
+  --md-primary-fg-color--light: #353a45;
+  --md-primary-fg-color--dark: #20242c;
+  --md-default-bg-color: var(--page-bg);
+  --md-default-fg-color: var(--text-color);
+  --md-typeset-a-color: var(--sidebar-link-color);
+  --md-footer-bg-color: var(--footer-bg);
+  --md-footer-fg-color: var(--text-color);
+
+  --md-code-bg-color: #20242c;
+  --md-code-fg-color: #d4d4d4;
+}

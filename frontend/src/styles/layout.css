@@ -1,0 +1,74 @@
+/* 頂部導覽列 */
+.md-header {
+  background-color: var(--header-bg);
+}
+
+/* 搜尋框 */
+.md-search__form {
+  background-color: var(--search-bg);
+}
+
+/* 主要頁面 */
+body,
+.md-container,
+.md-main,
+.md-content,
+.md-content__inner {
+  background-color: var(--page-bg);
+}
+
+/* 主要文字 */
+.md-content,
+.md-content p,
+.md-content li {
+  color: var(--text-color);
+}
+
+.md-typeset {
+  font-size: 0.9rem;
+}
+
+/* Sidebar 字體大小 */
+.md-sidebar--primary .md-nav {
+  font-size: 0.8rem;
+}
+
+/* 網站標題 */
+.md-header__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* 左右側欄標題 */
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--secondary .md-nav__title {
+  background-color: var(--header-bg);
+  color: var(--sidebar-title-color);
+  background-image: none;
+  box-shadow: none;
+}
+
+/* 右側目錄連結 */
+.md-sidebar--secondary .md-nav__link {
+  color: var(--sidebar-link-color);
+}
+
+/* 頁尾 */
+.md-footer {
+  background-color: var(--footer-bg);
+}
+
+/* Markdown 文章行距 */
+.md-typeset {
+  line-height: 1.4;
+}
+
+/* 隱藏左側目錄的首頁連結 */
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item:first-child {
+  display: none;
+}
+
+/* 擴大網站整體內容寬度 */
+.md-grid {
+  max-width: 75rem;
+}
