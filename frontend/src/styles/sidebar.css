@@ -1,0 +1,29 @@
+/* Sidebar 資料夾圖標 */
+.md-sidebar--primary .md-nav__item--nested > .md-nav__link::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  mask: url("https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/folder.svg") center / contain no-repeat;
+}
+
+/* Sidebar Markdown 文件圖標 */
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) > .md-nav__link::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  mask: url("https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/file-text.svg") center / contain no-repeat;
+}
+
+/* 展開的資料夾改用 folder-open 圖標 */
+.md-sidebar--primary
+.md-nav__item--nested
+.md-nav__toggle:checked
+~ .md-nav__link::before {
+  mask-image: url("https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/folder-open.svg");
+}
