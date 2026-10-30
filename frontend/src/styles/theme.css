@@ -20,24 +20,27 @@
   --md-footer-fg-color: #f5f0e6;
 }
 
-/* 深色模式 */
+/* 深色模式 - VSCode */
 [data-md-color-scheme="slate"] {
   color-scheme: dark;
 
-  --page-bg: #181614;
-  --text-color: #e8e0d6;
-  --header-bg: #292421;
-  --search-bg: #1f1c19;
-  --footer-bg: #100f0e;
-  --sidebar-title-color: #e8e0d6;
-  --sidebar-link-color: #d6b99a;
+  --header-bg: #1b1e25;
+  --page-bg: #252932;
+  --text-color: #d4d4d4;
+  --search-bg: #20242c;
+  --footer-bg: #20242c;
+  --sidebar-title-color: #d4d4d4;
+  --sidebar-link-color: #9cdcfe;
 
   --md-primary-fg-color: var(--header-bg);
-  --md-primary-fg-color--light: #3a332d;
-  --md-primary-fg-color--dark: #171412;
+  --md-primary-fg-color--light: #353a45;
+  --md-primary-fg-color--dark: #20242c;
   --md-default-bg-color: var(--page-bg);
   --md-default-fg-color: var(--text-color);
   --md-typeset-a-color: var(--sidebar-link-color);
   --md-footer-bg-color: var(--footer-bg);
   --md-footer-fg-color: var(--text-color);
+
+  --md-code-bg-color: #20242c;
+  --md-code-fg-color: #d4d4d4;
 }
