@@ -24,6 +24,15 @@ body,
   color: var(--text-color);
 }
 
+.md-typeset {
+  font-size: 0.9rem;
+}
+
+/* Sidebar 字體大小 */
+.md-sidebar--primary .md-nav {
+  font-size: 0.8rem;
+}
+
 /* 網站標題 */
 .md-header__title {
   font-size: 1rem;
