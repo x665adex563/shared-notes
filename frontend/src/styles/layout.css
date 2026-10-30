@@ -48,3 +48,8 @@ body,
 .md-footer {
   background-color: var(--footer-bg);
 }
+
+/* Markdown 文章行距 */
+.md-typeset {
+  line-height: 1.4;
+}
