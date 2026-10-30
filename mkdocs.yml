@@ -25,6 +25,7 @@ plugins:
 markdown_extensions:
   - admonition
   - tables
+  - nl2br
   - toc:
       permalink: true
 
